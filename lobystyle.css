@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+    background-color: #e66465;
+}
+/**loby**/
+#loby {
+    text-align: center;
+    display: inline
+}
+
+#titlee {
+    height: 50px;
+    background-image: linear-gradient(#e66465);
+}
+
+#tags {
+    height: 650px;
+    background-image: linear-gradient(#e66465, #9198e5);
+}
+
+.tags {
+    border-radius: 17px;
+    width: auto;
+    height: 35px;
+    font-size: large;
+}

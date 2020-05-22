@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello there~</title>
+        <script src="loby.js"></script>
+        <script src="rps.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="lobystyle.css">
+        <link rel="stylesheet" type="text/css" href="rpsstyle.css">
+        <link rel="stylesheet" type="text/css" href="animatie.css">
+    </head>
+    <body>
+        <div id="loby" class="pages">
+            <h1>
+                <div id="titlee">
+                    <p>loby</p>
+                </div>
+                <hr style="height:1px;border:none;border-top:1px dashed white;">
+                <div id="tags">
+                    <input id="rps" class="tags" type="button" value="⛰️🧻✂️" onclick="tprps()">
+                    <input id="remixer" class="tags" type="button" value="🎧🎼🎹">
+                    <input id="remixer" class="tags" type="button" value="2️048">
+                    <input id="remixer" class="tags" type="button" value="❌#⭕">
+                </div>
+            </h1>
+        </div>
+
+
+        <div id="rpspage" class="pages">
+            <div id="rpsleft">
+                <input id="rpsyou" type="text" class="rpsscore" placeholder="YOU"><br>
+                <input id="rpshumanrock" type="button" class="rpsrps" value="⛰️"  onclick="rpsrock()">
+                <input id="rpshumanpaper" type="button" class="rpsrps" value="🧻" onclick="rpspaper()">
+                <input id="rpshumanscissors" type="button" class="rpsrps" value="✂️" onclick="rpsscissors()">
+            </div>
+        
+            <div id="rpsright">
+                <input id="rpsme" type="text" class="rpsscore" placeholder="ME"><br>
+                <input id="rpscomputerrock" type="button" class="rpsrps" value="⛰️">
+                <input id="rpscomputerpaper" type="button" class="rpsrps" value="🧻">
+                <input id="rpscomputerscissors" type="button" class="rpsrps" value="✂️">
+            </div>
+
+            <div id="rpscenter">
+                <input id="rpsstart" type="button" class="rpssetting" value="▶️" onclick="rpsstart()">
+                <input id="rpsreset" type="button" class="rpssetting" value="🔄" onclick="rpsreset()">
+                <input id="tploby" type="button" class="rpssetting" value="🏠" onclick="tploby()">
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+#rpspage {
+    text-align: center;
+    display: none;
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+#rpsleft {
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+}
+
+
+#rpsright {
+    float: right;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.rpsscore {
+    background-color: black;
+    border: none;
+    border-color: yellow;
+    color: yellow;
+    height: 70px;
+    width: 100px;
+    font-size: large;
+    text-align: center;
+    display: none;
+}
+
+.rpsrps {
+    margin: 0px;
+    border: none;
+    background-color: black;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#rpsreset {
+    display: none;
+}
+
+.rpssetting {
+    margin: 0px;
+    border: none;
+    background-color: blue;
+    text-align: center;
+    border-radius: 13px;
+    width: 35px;
+    height: 35px;
+    font-size: large;
+}
