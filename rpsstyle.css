@@ -43,6 +43,12 @@
 #rpsreset {
     display: none;
 }
+#rpskeepgoing {
+    display: none;
+}
+#rpstied {
+    display: none;
+}
 
 .rpssetting {
     margin: 0px;
