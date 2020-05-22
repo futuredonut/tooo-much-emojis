@@ -60,3 +60,16 @@
     height: 35px;
     font-size: large;
 }
+
+#rpsa {
+    display: none;
+    margin: 0px;
+}
+#rpsab {
+    display: none;
+    margin: 0px;
+}
+#rpsae {
+    margin: 0px;
+    display: none;
+}

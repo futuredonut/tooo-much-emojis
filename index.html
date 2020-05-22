@@ -29,21 +29,24 @@
 
         <div id="rpspage" class="pages">
             <div id="rpsleft">
-                <input id="rpsyou" type="text" class="rpsscore" placeholder="YOU"><br>
+                <h3 id="rpsa" style="color: antiquewhite;">YOU</h3><br>
+                <input id="rpsyou" type="text" class="rpsscore" placeholder="0" readonly="true"><br>
                 <input id="rpshumanrock" type="button" class="rpsrps" value="⛰️"  onclick="rpsrock()">
                 <input id="rpshumanpaper" type="button" class="rpsrps" value="🧻" onclick="rpspaper()">
                 <input id="rpshumanscissors" type="button" class="rpsrps" value="✂️" onclick="rpsscissors()">
             </div>
         
             <div id="rpsright">
-                <input id="rpsme" type="text" class="rpsscore" placeholder="ME"><br>
+                <h3 id="rpsab" style="color: antiquewhite;">ME</h3><br>
+                <input id="rpsme" type="text" class="rpsscore" placeholder="0" readonly="true"><br>
                 <input id="rpscomputerrock" type="button" class="rpsrps" value="⛰️">
                 <input id="rpscomputerpaper" type="button" class="rpsrps" value="🧻">
                 <input id="rpscomputerscissors" type="button" class="rpsrps" value="✂️">
             </div>
 
             <div id="rpscenter">
-                <input id="rpstied" class="rpsscore" placeholder="Ties"><br><br>
+                <h3 id="rpsae" style="color: antiquewhite;">TIES</h3><br>
+                <input id="rpstied" class="rpsscore" placeholder="Ties" readonly="true"><br><br>
                 <input id="rpsstart" type="button" class="rpssetting" value="▶️" onclick="rpsstart()">
                 <input id="rpsreset" type="button" class="rpssetting" value="🔄" onclick="rpsreset()">
                 <input id="tploby" type="button" class="rpssetting" value="🏠" onclick="tploby()">

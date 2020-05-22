@@ -15,6 +15,9 @@ function rpsstart(){
     document.getElementById("rpsme").value = 0;
     document.getElementById("rpsyou").value = 0;
     document.getElementById("rpstied").value = 0;
+    document.getElementById("rpsa").style.display = "inline";
+    document.getElementById("rpsab").style.display = "inline";
+    document.getElementById("rpsae").style.display = "inline";
 }
 
 function rpsreset(){
@@ -31,13 +34,22 @@ function rpsreset(){
     document.getElementById("rpskeepgoing").style.display = "none";
     document.getElementById("rpstied").style.display = "none";
     document.getElementById("rpstied").value = '';
+    document.getElementById("rpsa").style.display = "none";
+    document.getElementById("rpsab").style.display = "none";
+    document.getElementById("rpsae").style.display = "none";
 }
 
 function rpskeepgoing(){
     document.getElementById("rpshumanrock").style.backgroundColor = "black";
     document.getElementById("rpshumanpaper").style.backgroundColor = "black";
     document.getElementById("rpshumanscissors").style.backgroundColor = "black"
+    document.getElementById("rpscomputerrock").style.backgroundColor = "black";
+    document.getElementById("rpscomputerpaper").style.backgroundColor = "black";
+    document.getElementById("rpscomputerscissors").style.backgroundColor = "black"
     document.getElementById("rpskeepgoing").style.display = "none";
+    document.getElementById("rpscomputerrock").style.display = "none";
+    document.getElementById("rpscomputerpaper").style.display = "none";
+    document.getElementById("rpscomputerscissors").style.display = "none";
 }
 
 function rpsrock(){
@@ -51,17 +63,23 @@ function rpsrock(){
     document.getElementById("rpshumanrock").style.backgroundColor = "yellow";
     document.getElementById("rpshumanpaper").style.backgroundColor = "black";
     document.getElementById("rpshumanscissors").style.backgroundColor = "black";
+    document.getElementById("rpscomputerscissors").style.backgroundColor = "black";
+    document.getElementById("rpscomputerpaper").style.backgroundColor = "black";
+    document.getElementById("rpscomputerrock").style.backgroundColor = "black";
     document.getElementById("rpskeepgoing").style.display = "inline";
     var human = 'paper'
     if(n <0.33){
         var computer = 'rock'
         document.getElementById("rpstied").value = ties+1
+        document.getElementById("rpscomputerrock").style.backgroundColor = "yellow"
     }else if(n <0.66){
         var computer = 'paper';
         document.getElementById("rpsyou").value = yourscore+1
+        document.getElementById("rpscomputerpaper").style.backgroundColor = "yellow"
     }else {
         var computer = 'scissors'
         document.getElementById("rpsme").value = myscore+1
+        document.getElementById("rpscomputerscissors").style.backgroundColor = "yellow"
     
     }
 }
@@ -82,12 +100,15 @@ function rpspaper(){
     if(n <0.33){
         var computer = 'rock'
         document.getElementById("rpsme").value = myscore+1
+        document.getElementById("rpscomputerrock").style.backgroun;dColor = "yellow"
     }else if(n <0.66){
         var computer = 'paper'
         document.getElementById("rpstied").value = ties+1
+        document.getElementById("rpscomputerpaper").style.backgroun;dColor = "yellow"
     }else {
         var computer = 'scissors'
         document.getElementById("rpsyou").value = yourscore+1
+        document.getElementById("rpscomputerscissors").style.backgroun;dColor = "yellow"
     }
 }
 
@@ -107,12 +128,15 @@ function rpsscissors(){
     if(n <0.33){
         var computer = 'rock'
         document.getElementById("rpsyou").value = yourscore+1
+        document.getElementById("rpscomputerrock").style.backgroun;dColor = "yellow"
     }else if(n <0.66){
         var computer = 'paper'
         document.getElementById("rpsme").value = myscore+1
+        document.getElementById("rpscomputerpaper").style.backgroun;dColor = "yellow"
     }else {
         var computer = 'scissors'
         document.getElementById("rpstied").value = ties+1
+        document.getElementById("rpscomputerscissors").style.backgroun;dColor = "yellow"
     }
 }
 
